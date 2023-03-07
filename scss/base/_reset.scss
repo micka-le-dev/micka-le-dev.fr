@@ -1,0 +1,33 @@
+
+/* Début du reset CSS */
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-size: 62.5%;
+    /*  si l'utilisateur à ses reglages par défaut,
+    alors 1rem = 10px */
+}
+body{
+    font-size: 1.6rem;
+}
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+input, button{
+    border: none;
+    outline: none;
+    font-size: inherit;
+}
+button{
+    cursor:pointer;
+    background: none;
+}
+/* Fin du reset CSS */
+

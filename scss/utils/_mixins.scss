@@ -1,0 +1,18 @@
+@use "sass:math";
+
+@mixin texte-responsive($fs-min, $fs-max, $ecran-min, $ecran-max) {
+    font-size: taille-responsive($fs-min, $fs-max, $ecran-min, $ecran-max);
+}
+
+@mixin anim-delay($nb-child, $delta-delay, $delay-offset: 0s) {
+    @for $i from 1 to ($nb-child + 1) {
+        &:nth-child(#{$i}) {
+            animation-delay: calc(($i - 1) * $delta-delay + $delay-offset);
+        }
+    }
+}
+
+@mixin pos-recouvre($position: absolute) {
+    position: $position;
+    inset: 0;
+}

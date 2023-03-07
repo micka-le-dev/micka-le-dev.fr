@@ -1,0 +1,16 @@
+{
+    "name": "micka-le-dev.fr",
+    "version": "1.0.0",
+    "description": "portefolio",
+    "main": "index.js",
+    "author": "micka-le-dev <mickael.petithory.pro@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "start": "sass --watch scss/main.scss:css/style.css",
+        "dev": "sass --watch scss/main.scss:css/style.css",
+        "build": "sass scss/main.scss:css/style.css"
+    },
+    "devDependencies": {
+        "prettier": "^2.8.4"
+    }
+}

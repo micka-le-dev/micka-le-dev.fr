@@ -1,0 +1,20 @@
+
+@use "sass:math";
+
+
+@function taille-responsive($t-min, $t-max, $ecran-min, $ecran-max){// en px
+
+    $beta: math.div( ($ecran-min * $t-max) - ($ecran-max * $t-min) , $ecran-min + $ecran-max ); // en px
+    $alpha: math.div( 100vw * ($t-max - $beta ) , $ecran-max ); // en vw
+
+    @return clamp($t-min, calc($alpha + $beta), $t-max);
+}
+
+@function taille-responsive-ref($t-ref, $ecran-ref, $ecran-min, $ecran-max){
+    @return taille-responsive( 
+            math.div( $ecran-min * $t-ref , $ecran-ref ),
+            math.div($ecran-max * $t-ref , $ecran-ref),
+            $ecran-min,
+            $ecran-max
+        );
+}
