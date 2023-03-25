@@ -11,20 +11,43 @@
         <script src="index.js" defer></script>
     </head>
     <body>
-        <header>
-            <h1>Mickaël Petithory - Développeur Web</h1>
+        <nav class="nav-barre">
+            <ul class="nav-barre__menu">
+                <a href="#accueil"  class="nav-barre__lien-item">
+                    <li>Accueil</li>
+                </a>
+                <a href="#accueil"  class="nav-barre__lien-item">
+                    <li>Formation</li>
+                </a>
+                <a href="#accueil"  class="nav-barre__lien-item">
+                    <li>Projets</li><!-- expériences -->
+                </a>
+                <a href="#accueil"  class="nav-barre__lien-item">
+                    <li>Compétences</li>
+                </a>
+                <a href="#accueil"  class="nav-barre__lien-item">
+                    <li>Contacts</li>
+                </a>
+            </ul>
+        </nav>
+        <header id="accueil" class="accueil">
+            <h1 class="titre">
+                <span class="titre__nom-prenom">Mickaël Petithory</span>
+                <span class="titre__metier">Développeur Web</span>
+            </h1>
+            <div class="layus">
+                <h3 class="layus__titre">
+                    Qui suis-je ?
+                </h3>
+                <p class="layus__texte">
+                    Jeune diplômé en développement web et aimant apprendre, je
+                    suis à la recherche d'un emploi dans ce domaine dans la
+                    région d'Avignon afin d’acquérir et d'élargir mes
+                    compétences.
+                </p>
+            </div>
         </header>
-        <section class="mon-ptit-layus">
-            <h2>
-                Qui je suis<br />
-                Et ce que je recherche
-            </h2>
-            <p>
-                Jeune diplômé en développement web et aimant apprendre, je suis
-                à la recherche d'un emploi dans ce domaine dans la région
-                d'Avignon afin d’acquérir et d'élargir mes compétences.
-            </p>
-        </section>
+
         <section class="competences">
             <h2>Mes compétences</h2>
             <h3>Langages</h3>
@@ -128,5 +151,12 @@
                 </li>
             </ul>
         </section>
+        <section class="projets">
+            <h2>Mes projets</h2>
+        </section>
+    
+        <footer id="contacts">
+            <h2>Contacts</h2>
+        </footer>
     </body>
 </html>

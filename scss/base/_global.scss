@@ -1,5 +1,11 @@
-// body {
-//     background-color: $couleur-tres-claire;
-//     color: $couleur-tres-sombre;
-//     font-family: $police-texte;
-// }
+body {
+    background-color: $couleur-sombre;
+    color: $couleur-claire;
+    font-family: $police-texte;
+    font-size: 24px;
+}
+
+h1{ font-size: 72px;    }
+h2{ font-size: 48px;    }
+h3{ font-size: 32px;    }
+p{  font-size: 24px;    }

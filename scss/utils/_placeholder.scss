@@ -4,6 +4,16 @@
     justify-content: center;
     align-items: center;
 }
+%flex-verticale-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+%largeur-centre{
+    max-width: 1000px;
+    width: 80%;
+}
 
 %pos-center{
     position: absolute;
@@ -17,4 +27,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+%ligne-bleu-pseudo-elem{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 160px;
+    border-radius: 5px;
+    background-color: $couleur-bleu;
+}
+%petite-ligne-bleu-pseudo-elem{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 96px;
+    border-radius: 5px;
+    background-color: $couleur-bleu;
 }

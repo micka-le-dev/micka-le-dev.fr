@@ -1,0 +1,18 @@
+.nav-barre{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    @extend %flex-center;
+
+    background-color: $couleur-sombre;
+    border-bottom: 2px solid #B0A990;
+
+    &__menu{
+        @extend %flex-center;
+        gap: 40px;
+    }
+    &__lien-item:hover{
+        color:$couleur-bleu-claire;
+    }
+}

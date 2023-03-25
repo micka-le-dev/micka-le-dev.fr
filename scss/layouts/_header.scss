@@ -1,0 +1,45 @@
+.accueil {
+    height: 100vh;
+    max-height: 1080px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    @extend %flex-verticale-center;
+    gap:50px;
+}
+
+.titre{
+    @extend %largeur-centre;
+    &__nom-prenom{
+        display: block;
+        font-weight: 700;
+        &::after{
+            @extend %ligne-bleu-pseudo-elem;
+        }
+    }
+    &__metier{
+        position: relative;
+        display: block;
+        margin-top: 50px;
+        text-align: right;
+        &::after{
+            position: absolute;
+            right: 0;
+            @extend %ligne-bleu-pseudo-elem;
+        }
+    }
+}
+
+.layus{
+    @extend %largeur-centre;
+    padding: 0 60px;
+
+    &__titre::after{
+        @extend %petite-ligne-bleu-pseudo-elem;
+        margin-top: 5px;
+    }
+    &__texte{
+        width: 80%;
+        float: right;
+        margin-top: 30px;
+    }
+}

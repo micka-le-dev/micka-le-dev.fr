@@ -1,3 +1,16 @@
+/* importation de la police */
+@font-face {
+	font-family: 'Montserrat';
+	src: url('polices/Montserrat/Montserrat-VariableFont_wght.eot');
+	src: local('☺'),
+	    url('polices/Montserrat/Montserrat-VariableFont_wght.woff') format('woff'),
+	    url('polices/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype'),
+	    url('polices/Montserrat/Montserrat-VariableFont_wght.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 @import "utils/variables";
 @import "utils/functions";
 @import "utils/mixins";
@@ -6,7 +19,9 @@
 
 @import "base/reset";
 @import "base/global";
-@import "base/header";
-@import "base/footer";
+
+@import "layouts/nav-barre";
+@import "layouts/header";
+@import "layouts/footer";
 
 @import "pages/accueil";
