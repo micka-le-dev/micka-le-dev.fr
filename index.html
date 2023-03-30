@@ -13,19 +13,20 @@
     <body>
         <nav class="nav-barre">
             <ul class="nav-barre__menu">
-                <a href="#accueil"  class="nav-barre__lien-item">
+                <a href="#accueil" class="nav-barre__lien-item">
                     <li>Accueil</li>
                 </a>
-                <a href="#accueil"  class="nav-barre__lien-item">
+                <a href="#formation" class="nav-barre__lien-item">
                     <li>Formation</li>
                 </a>
-                <a href="#accueil"  class="nav-barre__lien-item">
-                    <li>Projets</li><!-- expériences -->
+                <a href="#projets" class="nav-barre__lien-item">
+                    <li>Projets</li>
+                    <!-- expériences -->
                 </a>
-                <a href="#accueil"  class="nav-barre__lien-item">
+                <a href="#competences" class="nav-barre__lien-item">
                     <li>Compétences</li>
                 </a>
-                <a href="#accueil"  class="nav-barre__lien-item">
+                <a href="#contacts" class="nav-barre__lien-item">
                     <li>Contacts</li>
                 </a>
             </ul>
@@ -36,9 +37,7 @@
                 <span class="titre__metier">Développeur Web</span>
             </h1>
             <div class="layus">
-                <h3 class="layus__titre">
-                    Qui suis-je ?
-                </h3>
+                <h3 class="layus__titre">Qui suis-je ?</h3>
                 <p class="layus__texte">
                     Jeune diplômé en développement web et aimant apprendre, je
                     suis à la recherche d'un emploi dans ce domaine dans la
@@ -47,8 +46,9 @@
                 </p>
             </div>
         </header>
+        <section id="formation"><h2>Formation</h2></section>
 
-        <section class="competences">
+        <section id="competences" class="competences">
             <h2>Mes compétences</h2>
             <h3>Langages</h3>
             <ul>
@@ -151,12 +151,76 @@
                 </li>
             </ul>
         </section>
-        <section class="projets">
+        <section id="projets" class="projets">
             <h2>Mes projets</h2>
         </section>
-    
-        <footer id="contacts">
+
+        <footer id="contacts" class="contacts">
             <h2>Contacts</h2>
+            <div class="grid">
+                <div class="grid-item contact">
+                    <img
+                        class="logo"
+                        src="./asset/icones/telephone.svg"
+                        alt="logo téléphone"
+                    />
+                    <p class="detail-contact">06 87 68 23 97</p>
+                </div>
+                <div class="grid-item contact">
+                    <img
+                        src="./asset/icones/maison.svg"
+                        alt="logo maison"
+                        class="logo"
+                    />
+                    <p class="detail-contact">
+                        6 rue du rinoir<br />
+                        84800<br />
+                        Fontaine de Vaucluse
+                    </p>
+                </div>
+                <div class="grid-item contact">
+                    <img
+                        src="./asset/icones/email_envelope.svg"
+                        alt="logo enveloppe email"
+                        class="logo"
+                    />
+                    <p class="detail-contact">
+                        <a href="mailto:mickael.petithory.pro@gmail.com"
+                            >mickael.petithory.pro@gmail.com</a
+                        >
+                    </p>
+                </div>
+                <div class="grid-item contact">
+                    <img
+                        src="./asset/icones/github.svg"
+                        alt="logo github"
+                        class="logo"
+                    />
+                    <p class="detail-contact">
+                        <a
+                            href="https://github.com/micka-le-dev/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >github.com/micka-le-dev</a
+                        >
+                    </p>
+                </div>
+                <div class="grid-item contact">
+                    <img
+                        src="./asset/icones/linkedin.svg"
+                        alt="logo linkedin"
+                        class="logo"
+                    />
+                    <p class="detail-contact">
+                        <a
+                            href="https://www.linkedin.com/in/petithory-359b13268"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >linkedin.com/in/petithory-359b13268</a
+                        >
+                    </p>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

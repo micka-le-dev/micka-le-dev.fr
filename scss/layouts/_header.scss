@@ -1,7 +1,6 @@
 .accueil {
     height: 100vh;
     max-height: 1080px;
-    padding-top: 150px;
     padding-bottom: 50px;
     @extend %flex-verticale-center;
     gap:50px;

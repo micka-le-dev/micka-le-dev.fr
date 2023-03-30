@@ -1,11 +1,31 @@
 body {
+    min-height: 100vh;
+    @extend %flex-verticale-center;
+    gap: 50px;
+
     background-color: $couleur-sombre;
     color: $couleur-claire;
     font-family: $police-texte;
     font-size: 24px;
 }
 
-h1{ font-size: 72px;    }
-h2{ font-size: 48px;    }
-h3{ font-size: 32px;    }
-p{  font-size: 24px;    }
+h1 {
+    font-size: 72px;
+}
+h2 {
+    font-size: 48px;
+    padding-bottom: 48px;
+    text-align: center;
+}
+h3 {
+    font-size: 32px;
+}
+p {
+    font-size: 24px;
+}
+
+body > header,
+section {
+    padding-top: 150px;
+    @extend %largeur-centre;
+}
