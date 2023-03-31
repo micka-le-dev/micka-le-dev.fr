@@ -10,10 +10,10 @@
     align-items: center;
     justify-content: space-around;
 }
-%largeur-centre{
-    max-width: 1000px;
-    width: 80%;
-}
+// %largeur-centre{
+//     max-width: 1000px;
+//     width: 80%;
+// }
 
 %pos-center{
     position: absolute;
@@ -44,4 +44,9 @@
     width: 96px;
     border-radius: 5px;
     background-color: $couleur-bleu;
+}
+
+%text-align-padding{
+    padding-bottom: 2em;
+    text-align: center;
 }

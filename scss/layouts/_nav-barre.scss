@@ -7,11 +7,11 @@
     @extend %flex-center;
 
     background-color: $couleur-sombre;
-    border-bottom: 2px solid #B0A990;
+    border-bottom: 2px solid $couleur-beige;
 
     &__menu{
         @extend %flex-center;
-        gap: 40px;
+        gap: 50px;
     }
     &__lien-item:hover{
         color:$couleur-bleu-claire;

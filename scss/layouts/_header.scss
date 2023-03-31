@@ -1,13 +1,16 @@
-.accueil {
+header{
     height: 100vh;
     max-height: 1080px;
-    padding-bottom: 50px;
+}
+
+.accueil {
     @extend %flex-verticale-center;
-    gap:50px;
+    gap:100px;
+    padding-top: 20px;
 }
 
 .titre{
-    @extend %largeur-centre;
+    width: 100%;
     &__nom-prenom{
         display: block;
         font-weight: 700;
@@ -29,8 +32,12 @@
 }
 
 .layus{
-    @extend %largeur-centre;
+    width: 100%;
     padding: 0 60px;
+
+    &__titre{
+        text-align: left;
+    }
 
     &__titre::after{
         @extend %petite-ligne-bleu-pseudo-elem;

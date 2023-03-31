@@ -1,14 +1,15 @@
-footer{
-    width: 80%;
-    padding: 150px 0;
+.contacts{
+    padding: 0 10%;
+    border-top: 2px solid $couleur-beige;
+    h2{
+        padding: 0 0 150px;
+    }
 }
 
 .grid{
     display:grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(max-content, 455px));
-    // display: flex;
-    // flex-wrap: wrap;
     gap: 80px;
 }
 .contact{

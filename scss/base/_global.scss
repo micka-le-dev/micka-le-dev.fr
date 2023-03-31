@@ -3,29 +3,49 @@ body {
     @extend %flex-verticale-center;
     gap: 50px;
 
-    background-color: $couleur-sombre;
     color: $couleur-claire;
     font-family: $police-texte;
     font-size: 24px;
+    
+    background-image: url('../asset/images/code-html_w1280px.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    >header,
+    >section{
+        margin-bottom: 100px;
+    }
 }
+
+.section {
+    background-color: $couleur-sombre;
+    width: 100%;
+    margin: 100px 0;
+}
+header.section{
+    margin-top: 0;
+}
+footer.section{
+    margin-bottom: 0;
+}
+.limiteur-largeur{
+    max-width: 1000px;
+    width: 90%;
+    margin: 130px auto 150px;
+}
+
+
 
 h1 {
     font-size: 72px;
 }
 h2 {
     font-size: 48px;
-    padding-bottom: 48px;
-    text-align: center;
+    @extend %text-align-padding;
 }
 h3 {
     font-size: 32px;
 }
 p {
     font-size: 24px;
-}
-
-body > header,
-section {
-    padding-top: 150px;
-    @extend %largeur-centre;
 }
