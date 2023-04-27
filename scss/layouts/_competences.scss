@@ -1,24 +1,4 @@
-.competences {
-    &__liste {
-        display: grid;
-        gap: 60px;
-    }
-}
-
 .competence {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 30px;
-
-    position: relative;
-    &::before {
-        position: absolute;
-        left: 270px;
-        @extend %petite-ligne-bleu-pseudo-elem;
-        margin-top: 5px;
-    }
-
     &__titre {
         text-align: right;
     }

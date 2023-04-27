@@ -20,9 +20,12 @@
 @import "base/reset";
 @import "base/global";
 
+@import "components/liste";
+
 @import "layouts/nav-barre";
 @import "layouts/header";
 @import "layouts/competences";
+@import "layouts/formation";
 @import "layouts/footer";
 
 @import "pages/accueil";
