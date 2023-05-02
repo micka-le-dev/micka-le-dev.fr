@@ -3,10 +3,10 @@ body {
     @extend %flex-verticale-center;
     gap: 50px;
 
-    color: $couleur-claire;
+    color: $couleur-texte;
     font-family: $police-texte;
     font-size: 24px;
-    
+
     background-image: url('../asset/images/pexels-thisisengineering-3861972.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,7 +18,7 @@ body {
 }
 
 .section {
-    background-color: $couleur-sombre;
+    background-color: $couleur-bg-principal;
     width: 100%;
     margin: 100px 0;
 }

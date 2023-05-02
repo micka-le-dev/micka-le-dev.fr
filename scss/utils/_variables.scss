@@ -3,9 +3,22 @@
 $police-texte : 'Montserrat', Arial, Helvetica, sans-serif;
 
 // couleurs
-$couleur-sombre : #333;
-$couleur-claire : #FECEE9;
-$couleur-beige : #B0A990;
-$couleur-bleu : #7D83FF;
-$couleur-bleu-claire : #00A8E8;
+// couleurs de base
+$couleur-sombre : #0D1B2A;// #333;
+$couleur-sombre-2: #3F5A3F;
+$couleur-claire : #E0E1DD;//#FECEE9;
+$couleur-claire-3 : #7D83FF;
+$couleur-claire-sombre : #92374D;
 
+$couleur-bleu-claire : #00A8E8;
+$couleur-vert : #CAFFD0;
+$couleur-beige : #B0A990;
+
+//couleurs des atoms
+$couleur-bg-principal : $couleur-claire;
+$couleur-texte: $couleur-sombre;
+$couleur-texte-2: $couleur-sombre-2;
+
+$couleur-lien-hover : $couleur-bleu-claire;
+$couleur-border : $couleur-claire-sombre;
+$couleur-ligne: $couleur-claire-sombre;

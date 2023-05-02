@@ -35,7 +35,7 @@
     height: 5px;
     width: 160px;
     border-radius: 5px;
-    background-color: $couleur-bleu;
+    background-color: $couleur-ligne;
 }
 %petite-ligne-bleu-pseudo-elem{
     content: '';
@@ -43,7 +43,7 @@
     height: 5px;
     width: 96px;
     border-radius: 5px;
-    background-color: $couleur-bleu;
+    background-color: $couleur-ligne;
 }
 
 %text-align-padding{
