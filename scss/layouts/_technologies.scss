@@ -1,0 +1,36 @@
+.technologie__groupe{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    // outline: 1px solid red; //dev
+    &:not(:last-child){
+        margin-bottom: 80px;
+    }
+    & > h3{
+        // outline: 1px solid yellow; //dev
+        text-align: right;
+    }
+}
+.technologie__groupe:nth-child(2n+1){
+    flex-direction: row-reverse;
+    & > h3{
+        text-align: left;
+    }
+}
+
+.technoligies__liste{
+    // outline: 1px solid blue; //dev
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.technologie{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 20px;
+    align-items: center;
+    &__nom{
+        text-align: right;
+    }
+}
