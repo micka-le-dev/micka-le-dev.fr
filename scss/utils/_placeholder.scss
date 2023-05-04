@@ -29,7 +29,7 @@
     justify-content: space-between;
 }
 
-%ligne-bleu-pseudo-elem{
+%ligne-pseudo-elem{
     content: '';
     display: block;
     height: 5px;
@@ -37,7 +37,7 @@
     border-radius: 5px;
     background-color: $couleur-ligne;
 }
-%petite-ligne-bleu-pseudo-elem{
+%petite-ligne-pseudo-elem{
     content: '';
     display: block;
     height: 5px;

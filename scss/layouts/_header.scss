@@ -15,7 +15,7 @@ header{
         display: block;
         font-weight: 700;
         &::after{
-            @extend %ligne-bleu-pseudo-elem;
+            @extend %ligne-pseudo-elem;
         }
     }
     &__metier{
@@ -26,7 +26,7 @@ header{
         &::after{
             position: absolute;
             right: 0;
-            @extend %ligne-bleu-pseudo-elem;
+            @extend %ligne-pseudo-elem;
         }
     }
 }
@@ -40,7 +40,7 @@ header{
     }
 
     &__titre::after{
-        @extend %petite-ligne-bleu-pseudo-elem;
+        @extend %petite-ligne-pseudo-elem;
         margin-top: 5px;
     }
     &__texte{
