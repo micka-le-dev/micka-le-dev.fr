@@ -1,0 +1,67 @@
+.nav-barre{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    @extend %flex-center;
+    background-color: $couleur-bg-principal;
+    border-bottom: 2px solid $couleur-border;
+
+    &__menu{
+        @extend %flex-center;
+        gap: 10px;
+        height: 100%;
+    }
+    &__item{
+        @extend %flex-center;
+        padding: 0 20px;
+    }
+    &__lien-item{
+        padding: 20px;
+        text-align: center;
+        width: fit-content;
+    }
+
+    &__toggle{
+        @extend %flex-center;
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        top: 25px;
+        left: 25px;
+        aspect-ratio: 1;
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+
+        & .ligne{
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $couleur-sombre;
+            transition: transform 0.3s ease-in-out,
+                        opacity 0.1s ease-in-out;
+        }
+        & .l1{  transform: translateY(-10px);   }
+        & .l3{  transform: translateY(10px);    }
+        &--active .l1{  transform: translateY(0) rotate(135deg);    }
+        &--active .l2{  opacity: 0;    }
+        &--active .l3{  transform: translateY(0) rotate(-135deg);    }
+    }
+
+    @media (max-width: 1110px){
+        height: auto;
+        max-height: 100vh;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+        &--active{  transform: translateY(0);   }
+
+        &__toggle{ display: flex; }
+        &__menu{
+            flex-direction: column;
+            padding: 20px 0;
+        }
+    }
+}
