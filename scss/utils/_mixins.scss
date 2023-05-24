@@ -11,7 +11,7 @@
 }
 
 
-@mixin remplissage-barre-niveau(){
+@mixin remplissage-barre-niveau(){ // l'attibut data-niveau est une note sur 20
     @for $i from 0 to 21{
         &[data-niveau='#{$i}']{
             &::before{ width: #{$i * 5%}; }
