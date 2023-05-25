@@ -1,16 +1,24 @@
 header{
     height: 100vh;
     max-height: 1080px;
+    &.section{
+        margin-top: 0;
+    }
 }
 
 .accueil {
     @extend %flex-verticale-center;
-    gap:100px;
+    height: 100%;
     padding-top: 20px;
+    @media (max-width: $breakpoint-mobile){
+        padding: 0;
+    }
 }
 
 .titre{
     width: 100%;
+    font-size: 72px;
+    font-size: taille-responsive(24px, 72px, $breakpoint-ecran-min, $breakpoint-mobile);
     &__nom-prenom{
         display: block;
         font-weight: 700;
@@ -21,7 +29,7 @@ header{
     &__metier{
         position: relative;
         display: block;
-        margin-top: 50px;
+        margin: 50px 0;
         text-align: right;
         &::after{
             position: absolute;
@@ -33,7 +41,7 @@ header{
 
 .layus{
     width: 100%;
-    padding: 0 60px;
+    padding: 0 taille-responsive(20px, 60px, $breakpoint-ecran-min, $breakpoint-mobile);
 
     &__titre{
         text-align: left;
@@ -47,5 +55,9 @@ header{
         width: 80%;
         float: right;
         margin-top: 30px;
+        @media (max-width: $breakpoint-mobile){
+            float: none;
+            width: 100%;
+        }
     }
 }

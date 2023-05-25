@@ -22,9 +22,9 @@ body {
     background-color: $couleur-bg-principal;
     width: 100%;
     margin: 100px 0;
-}
-header.section{
-    margin-top: 0;
+    padding: 120px 0 100px;
+    padding-top: taille-responsive(75px,120px, $breakpoint-ecran-min,$breakpoint-nav-barre);
+    padding-bottom: taille-responsive(70px,100px, $breakpoint-ecran-min,$breakpoint-nav-barre);
 }
 footer.section{
     margin-bottom: 0;
@@ -32,14 +32,25 @@ footer.section{
 .limiteur-largeur{
     max-width: 1000px;
     width: 90%;
-    margin: 130px auto 150px;
+    height: 100%; // ??
+    margin: 0 auto;
+    @media (max-width: $breakpoint-mobile){
+        width: auto;
+        margin: 0 20px;
+    }
 }
 
+//!  888888888888   88b           d88   88888888ba                                                  88
+//!       88        888b         d888   88      "8b                                                 88
+//!       88        88`8b       d8'88   88      ,8P                                                 88
+//!       88        88 `8b     d8' 88   88aaaaaa8P'         ,adPPYba,   8b,dPPYba,          ,adPPYb,88    ,adPPYba,   8b       d8
+//!       88        88  `8b   d8'  88   88""""""'          a8P_____88   88P'   `"8a        a8"    `Y88   a8P_____88   `8b     d8'
+//!       88        88   `8b d8'   88   88                 8PP"""""""   88       88        8b       88   8PP"""""""    `8b   d8'
+//!       88        88    `888'    88   88                 "8b,   ,aa   88       88        "8a,   ,d88   "8b,   ,aa     `8b,d8'
+//!       88        88     `8'     88   88                  `"Ybbd8"'   88       88         `"8bbdP"Y8    `"Ybbd8"'       "8"
+.masquer-pour-dev{   display: none; }
 
 
-h1 {
-    font-size: 72px;
-}
 h2 {
     font-size: 48px;
     @extend %text-align-padding;
