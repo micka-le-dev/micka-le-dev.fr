@@ -1,10 +1,38 @@
 .competence {
+    display: flex;
+    gap: 30px;
+
+
     &__titre {
         text-align: right;
         font-size: 28px;
+        width: 260px;
+        flex-shrink: 0;
+        
+        position: relative;
+        &::before {
+            position: absolute;
+            right: -111px;
+            @extend %petite-ligne-pseudo-elem;
+            margin-top: 5px;
+        }
     }
     &__phrase {
         padding-top: 20px;
-        text-align: justify;
+        // text-align: justify;
+    }
+
+    @media (max-width: $breakpoint-nav-barre){
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        &__titre{
+            width: 100%;
+            text-align: center;
+            &::before{
+                right: calc(50% - 48px);
+                bottom: -8px;
+            }
+        }
     }
 }
