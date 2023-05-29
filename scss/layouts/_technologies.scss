@@ -1,16 +1,15 @@
 .technologie__groupe{
     display: flex;
-    gap: 10%;
+    row-gap: 40px;
+    column-gap: 80px;
     justify-content: center;
     align-items: center;
-    // outline: 1px solid red; //dev
 
 
     &:not(:last-child){
         margin-bottom: 80px;
     }
     & > h3{
-        // outline: 1px solid yellow; //dev
         text-align: right;
 
         // petite ligne
@@ -21,6 +20,13 @@
             @extend %petite-ligne-pseudo-elem;
             width: 50%;
         }
+        @media (max-width: $breakpoint-mobile){
+            &::after{ right: calc(50% - 48px);}    // petite ligne
+        }
+    }
+
+    @media (max-width: $breakpoint-mobile){
+        flex-direction: column;
     }
 }
 .technologie__groupe:nth-child(2n){
@@ -28,21 +34,38 @@
     & > h3{
         text-align: left;
         &::after{ right: 0;}    // petite ligne
+        @media (max-width: $breakpoint-mobile){
+            &::after{ right: calc(50% - 48px);}    // petite ligne
+        }
+    }
+    @media (max-width: $breakpoint-mobile){
+        flex-direction: column;
     }
 }
 
 .technoligies__liste{
-    // outline: 1px solid blue; //dev
     display: flex;
     flex-direction: column;
     gap: 10px;
+    @media (max-width: $breakpoint-niveaux ){
+        gap: 20px;
+    }
 }
 .technologie{
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    gap: 20px;
+    display: flex;
+    gap: 8px 20px;
     align-items: center;
     &__nom{
+        width: 100%;
         text-align: right;
+    }
+    & .barre-niveau{
+        flex-shrink: 0;
+        width: 200px;
+    }
+
+    @media (max-width: $breakpoint-niveaux ){
+        flex-direction: column;
+        &__nom{ text-align: center; }
     }
 }
