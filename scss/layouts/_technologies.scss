@@ -21,7 +21,7 @@
             width: 50%;
         }
         @media (max-width: $breakpoint-mobile){
-            &::after{ right: calc(50% - 48px);}    // petite ligne
+            &::after{ right: 25%;}    // petite ligne
         }
     }
 
@@ -35,7 +35,7 @@
         text-align: left;
         &::after{ right: 0;}    // petite ligne
         @media (max-width: $breakpoint-mobile){
-            &::after{ right: calc(50% - 48px);}    // petite ligne
+            &::after{ right: 25%;}    // petite ligne
         }
     }
     @media (max-width: $breakpoint-mobile){
