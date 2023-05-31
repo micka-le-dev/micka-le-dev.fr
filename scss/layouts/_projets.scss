@@ -1,0 +1,21 @@
+.portfolio{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projet{
+    flex-shrink: 0;
+    background-color: $couleur-beige;
+    border-radius: 5px;
+    &__lien{
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+    }
+    &__logo{
+        display: inline-block;
+        aspect-ratio: 1;
+        height: 1em;
+    }
+}
