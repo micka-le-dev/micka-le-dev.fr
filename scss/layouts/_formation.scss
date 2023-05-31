@@ -1,24 +1,40 @@
 .formation {
-    &.liste__element{
-        grid-template-columns: 120px 1fr;
-        &::before{
-            left: 135px;
+    display: flex;
+    row-gap: 0;
+    column-gap: 40px;
+    &__annee {
+        flex-shrink: 0;
+        // text-align: right;
+        width: 55px;
+        float: left;
+
+        // petite ligne
+        position: relative;
+        &::before {
+            position: absolute;
+            right: -115px;
+            top: -8px;
+            @extend %petite-ligne-pseudo-elem;
         }
     }
-    &__annee {
-        text-align: right;
-    }
     &__details {
-        padding-top: 20px;
+        margin-top: 12px;
+        padding: 8px;
+        border-radius: 5px;
         display: flex;
         align-items: center;
-        gap: 40px;
-    }
-    &__ecole-et-nom {
-        text-align: justify;
+        justify-content: space-between;
+        width: 100%;
+        row-gap: 20px;
+        column-gap: 40px;
+        background-color: darken($color: $couleur-claire, $amount: 5%);
+
+        @media (max-width: $breakpoint-mobile){
+            flex-direction: column;
+            text-align: center;
+        }
     }
     &__nom {
-        // font-size: 1.2em;
         margin-bottom: 10px;
     }
     &__ecole{
@@ -27,5 +43,16 @@
     &__lieu {
         font-size: 0.8em;
         font-style: italic;
+    }
+
+    @media (max-width: $breakpoint-formation){
+        flex-direction: column;
+        &__annee {
+            width: 100%;
+            text-align: center;
+            &::before{
+                right: calc(50% - 48px);
+            }
+        }
     }
 }
