@@ -1,5 +1,6 @@
 .contacts{
     border-top: 2px solid $couleur-border;
+    background-color: darken($color: $couleur-claire, $amount: 10%);
 }
 
 .grid{
