@@ -6,16 +6,51 @@
 
 .projet{
     flex-shrink: 0;
-    background-color: $couleur-beige;
-    border-radius: 5px;
-    &__lien{
-        display: flex;
-        align-items: center;
-        gap: 0.5em;
-    }
-    &__logo{
-        display: inline-block;
-        aspect-ratio: 1;
-        height: 1em;
+    &-carte{
+        @extend %scale-hover;
+        position: relative;
+        width: 250px;
+        aspect-ratio: 200/220;
+        background-color: $couleur-beige;
+        border-radius: 5px;
+        overflow: hidden;
+
+        &__conteneur-img{
+            position: absolute;
+            inset: 0;
+        }
+        &__illustration{
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+
+        &__contenu{
+            position: absolute;
+            inset: 0;
+            background-color: rgba($color: white, $alpha: 0.1);
+            padding: 5px;
+            @extend %flex-verticale-center;
+            justify-content: center;
+            gap: 20px;
+            & > *{
+                background-color: $couleur-beige;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+        }
+        &__lien{
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+            @extend %scale-hover;
+        }
+        &__logo{
+            display: inline-block;
+            aspect-ratio: 1;
+            height: 1em;
+        }
     }
 }
