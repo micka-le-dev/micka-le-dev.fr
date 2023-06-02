@@ -1,14 +1,4 @@
-
-const detailsProjets = [
-    {
-        nomProjet: 'ohmyfood',
-        urlIllustration: "asset/images/accueil-ohmyfood.jpg",
-        altIllustration: 'site ohmyfood',
-        urlGithub: "https://github.com/micka-le-dev/OC-P3-ohmyfood",
-        urlSite: "https://micka-le-dev.github.io/OC-P3-ohmyfood/",
-        mission: "mission à décrire !"
-    }
-]
+import detailsProjets from '../data.json' assert {type : 'json'}
 
 const templateProjet = document.querySelector('template#js-projet')
 const portefoloioElement = document.querySelector('.portefolio')
@@ -23,8 +13,16 @@ const newProjetElement = (template, projet) => {
     illustrationProjetElement.setAttribute('alt', projet.altIllustration)
 
     clone.querySelector('.projet-carte__titre').textContent = projet.nomProjet
-    clone.querySelector('.projet-carte__lien--github').setAttribute('href',projet.urlGithub)
-    clone.querySelector('.projet-carte__lien--siteweb').setAttribute('href',projet.urlSite)
+
+    const lienGithubElement = clone.querySelector('.projet-carte__lien--github')
+    projet.urlGithub ? lienGithubElement.setAttribute('href',projet.urlGithub)
+                     : lienGithubElement.remove()
+
+    const lienSiteWebElement = clone.querySelector('.projet-carte__lien--siteweb')
+    projet.urlSite ? lienSiteWebElement.setAttribute('href',projet.urlSite)
+                     : lienSiteWebElement.remove()
+    console.log(projet.urlSite, projet.urlSite ? true : false)
+
     clone.querySelector('.projet-mission > p').textContent = projet.mission
 
     return clone
