@@ -1,7 +1,9 @@
 .portefolio{
+    margin: 0 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 40px;
 }
 
 .projet{
@@ -13,6 +15,7 @@
         aspect-ratio: 200/220;
         background-color: $couleur-beige;
         border-radius: 5px;
+        box-shadow: 0px 0px 17px -3px rgba(13, 27, 42, 1);
         overflow: hidden;
 
         &__conteneur-img{
@@ -52,5 +55,9 @@
             aspect-ratio: 1;
             height: 1em;
         }
+    }
+
+    &-mission{
+        display: none;
     }
 }

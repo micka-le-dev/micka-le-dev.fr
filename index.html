@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="stylesheet" href="css/style.css" />
-        <script src="index.js" defer></script>
+        <script src="index.js" type="module" defer></script>
     </head>
     <body>
         <nav class="nav-barre">
@@ -236,43 +236,48 @@
                 <ul class="portefolio">
 
 
-                    <li class="projet">
-                        <div class="projet-carte">
-                            <div class="projet-carte__conteneur-img">
-                                <img src="asset/images/accueil-ohmyfood.jpg" alt="site ohmyfood" class="projet-carte__illustration">
+
+                    <template id="js-projet">
+                        <li class="projet">
+                            <div class="projet-carte">
+                                <div class="projet-carte__conteneur-img">
+                                    <!-- maque la src et le alt de l'illustration du projet -->
+                                    <img class="projet-carte__illustration">
+                                </div>
+                                <div class="projet-carte__contenu">
+                                    <h3 class="projet-carte__titre"><!-- manque le titre du projet --></h3>
+                                    <!-- manque le lien vers le repo github -->
+                                    <a
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="projet-carte__lien projet-carte__lien--github">
+                                        <img
+                                            src="./asset/icones/github.svg"
+                                            alt="logo github"
+                                            class="projet-carte__logo"
+                                        />
+                                        github
+                                    </a>
+                                    <!-- manque le lien vers le site -->
+                                    <a
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="projet-carte__lien projet-carte__lien--siteweb">
+                                        <img
+                                            src="./asset/icones/site_web.svg"
+                                            alt="logo site web"
+                                            class="projet-carte__logo"
+                                        />
+                                        voir le site
+                                    </a>
+                                </div>
                             </div>
-                            <div class="projet-carte__contenu">
-                                <h3 class="projet-carte__titre">ohmyfood</h3>
-                                <a
-                                    href="https://github.com/micka-le-dev/OC-P3-ohmyfood"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="projet-carte__lien">
-                                    <img
-                                        src="./asset/icones/github.svg"
-                                        alt="logo github"
-                                        class="projet-carte__logo"
-                                    />
-                                    github
-                                </a>
-                                <a
-                                    href="https://micka-le-dev.github.io/OC-P3-ohmyfood/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="projet-carte__lien">
-                                    <img
-                                        src="./asset/icones/site_web.svg"
-                                        alt="logo site web"
-                                        class="projet-carte__logo"
-                                    />
-                                    voir le site
-                                </a>
+                            <div class="projet-mission">
+                                <p><!-- description  --></p>
                             </div>
-                        </div>
-                        <div class="projet__mission">
-                            <p>décrire la mision !<!-- à compléter ! --></p>
-                        </div>
-                    </li>
+                        </li>
+                    </template>
+
 
 
                 </ul>
