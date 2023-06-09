@@ -58,7 +58,6 @@
             display: flex;
             align-items: center;
             gap: 0.5em;
-            @extend %scale-hover;
         }
         &__logo{
             display: inline-block;

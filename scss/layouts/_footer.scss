@@ -20,8 +20,4 @@
         aspect-ratio: 1;
         fill: currentColor;
     }
-    a{
-        @extend %scale-hover;
-        transform: scale(2);
-    }
 }
