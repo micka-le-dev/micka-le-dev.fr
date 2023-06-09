@@ -9,7 +9,7 @@
 .projet{
     flex-shrink: 0;
     &-carte{
-        @extend %scale-hover;
+        // @extend %scale-hover;
         position: relative;
         width: 250px;
         aspect-ratio: 200/220;
@@ -39,9 +39,19 @@
             justify-content: center;
             gap: 20px;
             & > *{
-                background-color: $couleur-beige;
                 padding: 5px 10px;
-                border-radius: 5px;
+                position: relative;
+                z-index: 1;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                    border-radius: 10px;
+                    background-color: $couleur-claire;
+                    filter: blur(2px);
+                    opacity: 0.9;
+                    z-index: -1;
+                }
             }
         }
         &__lien{

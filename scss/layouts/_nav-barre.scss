@@ -18,6 +18,7 @@
         padding: 0 20px;
     }
     &__lien-item{
+        @extend %scale-hover;
         padding: 20px;
         text-align: center;
         width: fit-content;
