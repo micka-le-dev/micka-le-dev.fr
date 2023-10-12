@@ -21,7 +21,6 @@ const newProjetElement = (template, projet) => {
     const lienSiteWebElement = clone.querySelector('.projet-carte__lien--siteweb')
     projet.urlSite ? lienSiteWebElement.setAttribute('href',projet.urlSite)
                      : lienSiteWebElement.remove()
-    console.log(projet.urlSite, projet.urlSite ? true : false)
 
     clone.querySelector('.projet-mission > p').textContent = projet.mission
 

@@ -1,14 +1,5 @@
 /* importation de la police */
-@font-face {
-	font-family: 'Montserrat';
-	src: url('polices/Montserrat/Montserrat-VariableFont_wght.eot');
-	src: local('☺'),
-	    url('polices/Montserrat/Montserrat-VariableFont_wght.woff') format('woff'),
-	    url('polices/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype'),
-	    url('polices/Montserrat/Montserrat-VariableFont_wght.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
 
 
 @import "utils/variables";
